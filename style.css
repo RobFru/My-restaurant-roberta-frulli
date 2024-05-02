@@ -1,0 +1,333 @@
+:root{
+    --main: rgb(219,214,208);
+    --sec: rgb(59,59,59);
+    
+    --accAntipasti:#ffba08;
+    
+    --accPrimi:#f48c06;
+ 
+    --accSecondi:#dc2f02 ;
+    
+    --accDolci:#370617 ;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: var(--main);
+    padding: 20px;
+}
+
+.profile{
+    width: 70px;
+    border-radius: 100%;
+    padding: 7px;
+    border: 2px solid var(--sec);
+}
+.sec-form{
+    color:rgb(219,214,208) ;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 200px;
+    text-align: center;
+    color: var(--sec);
+}
+
+
+.antipasti, .primi, .secondi, .dolci{
+    height: 350px;
+}
+.antipasti{
+    background-image:url(./media/antipasti/starter2.avif) ;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+}
+
+.antipasti:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.402)), url(./media/antipasti/starter2.avif) ;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+
+}
+.primi{
+    background-image:url(./media/dolci/dolce3.avif) ;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+
+}
+.primi:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.402)), url(./media/dolci/dolce3.avif) ;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+
+
+
+}
+.secondi{
+    background-image: url(./media/secondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+
+}
+
+.secondi:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.402)), url(./media/secondo3.jpg) ;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+
+
+
+}
+.dolci{
+    background-image: url(./media/dolce1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+
+}
+
+.dolci:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0, 0, 0, 0.295)), url(./media/dolci/dolce1.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+
+
+.boxAntipasti{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accAntipasti);
+    border-radius: 50%;
+    border: 1px solid var(--main);
+}
+
+.boxPrimi{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accPrimi);
+    border-radius: 50%;
+    border: 1px solid var(--main);
+}
+
+.boxSecondi{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accSecondi);
+    border-radius: 50%;
+    border: 1px solid var(--main);
+}
+
+.boxDolci{
+    height: 50px;
+    width: 50px;
+    background-color: var(--accDolci);
+    border-radius: 50%;
+    border: 1px solid var(--main);
+}
+
+.navbarBottom{
+    background-color: var(--sec);
+}
+
+.offcanvas{
+    min-height: 500px;
+    background-color: var(--main);
+}
+.card-img-top{
+    
+    height: 280px;
+}
+.img-carousel{
+    height: 100px;
+}
+
+
+.sec2-Antipasti{
+    background-color: var(--accAntipasti);
+}
+
+.sec2-Primi{
+    background-color: var(--accPrimi);
+}
+
+.sec2-Secondi{
+    background-color: var(--accSecondi);
+}
+
+.sec2-Dolci{
+    background-color: var(--accDolci);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--sec) !important;
+    color: var(--main) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+.img-sec2-a{
+    width: 150px;
+}
+
+.footer{
+    min-height: 400px;
+}
+
+form{
+    background-color: var(--sec);
+}
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    .navbarBottom{
+        width: 90% !important;
+    }
+
+    .video{
+        width: 100% !important;
+    }
+}
+
+
+/* antipasti */
+.title-antipasti{
+    color: var(--accAntipasti);
+}
+
+
+.aside-antipasti{
+    background-color: var(--sec);
+    color: var(--main);
+    padding: 30px 0px;
+    overflow-x: hidden;
+}
+
+.container-antipasti{
+    animation: aside 20s infinite;
+}
+
+
+@keyframes aside {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* primi*/
+.title-primi{
+    color: var(--accPrimi);
+}
+
+
+.aside-primi{
+    background-color: var(--accPrimi);
+    color: var(--sec);
+    padding: 30px 0px;
+    overflow-x: hidden;
+}
+
+.container-primi{
+    animation: aside 15s infinite;
+}
+
+
+@keyframes aside {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* secondi*/
+.title-secondi{
+    color: var(--accSecondi);
+}
+
+
+.aside-secondi{
+    background-color: var(--accSecondi);
+    color: var(--main);
+    padding: 30px 0px;
+    overflow-x: hidden;
+}
+
+.container-india{
+    animation: aside 15s infinite;
+}
+
+
+@keyframes aside {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* dolci*/
+.title-dolci{
+    color: var(--accDolci);
+}
+
+
+.aside-dolci{
+    background-color: var(--accDolci);
+    color: var(--sec);
+    padding: 30px 0px;
+    overflow-x: hidden;
+}
+
+.container-turchia{
+    animation: aside 15s infinite;
+}
+.video-antipasti{
+    width: 800px;
+    height: 800px;
+}
+.video-primi{
+    width: 800px;
+    height: 800px;
+    
+    
+}
+.video-secondi{
+    width: 600px;
+    height: 600px;
+    
+}
+.video-dolci{
+    width: 600px;
+    height: 600px;
+    
+}
+
+@keyframes aside {
+    0%{
+        transform: translateX(100%);
+    }100%{
+        transform: translateX(-100%);
+    }
+}

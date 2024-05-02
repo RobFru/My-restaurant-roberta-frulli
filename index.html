@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myresturant</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- googlefont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- icone -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg d-none d-md-block">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Myrestaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop">Articoli</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chi siamo
+            </a>
+            <ul class="dropdown-menu bg-transparent">
+              <li><a class="dropdown-item" href="#">La nostra storia</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Social</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <span class="fw-bold me-2">Benvenuto</span>
+          <img src="./media/ristorante1.avif" class="profile" alt="">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar mobile (visibile anche da pc) -->
+
+  <nav class="navbar navbar-expand-lg navbarBottom mx-auto fixed-bottom my-4 w-25 rounded-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-light" href="#">MY REST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-light h3"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item">
+            <a class="nav-link text-light text-decoration-underline " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light text-decoration-underline " href="#" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Articoli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light text-decoration-underline " href="#">Chi siamo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- header -->
+  <header class="container-fluid ">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h1>MY RESTAURANT</h1>
+      </div>
+      <div class="col-11">
+        <!-- collage -->
+        <div class="row justify-content-evenly rounded-4 p-5 my-5 ">
+          <div class="col-12 col-md-3 antipasti my-3 rounded-4 ">
+
+          </div>
+          <div class="col-12 col-md-7 primi my-3 rounded-4 ">
+
+          </div>
+          <div class="col-12 col-md-8 secondi my-3 rounded-4 ">
+
+          </div>
+          <div class="col-12 col-md-3 dolci my-3 rounded-4 ">
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- main -->
+      <main>
+        <!-- section1 -->
+        <section class="container my-5">
+          <div class="row justify-content-around  ">
+            <div class="col-11 col-md-3 my-2">
+              <p></p>
+              <h3 class="fw-bold">'Non si può pensare bene, amare bene, dormire bene, se non si ha mangiato bene.'</h3>
+            </div>
+            <div class="col-11 col-md-4 my-2">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./media/antipasti/starter1.jpg" class=" d-block w-100 rounded-4" alt="focaccia">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./media/primi piatti/primo1.avif" class=" d-block w-100 rounded-4" alt="pasta">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./media/secondi piatti/secondo3.jpg" class=" d-block w-100 rounded-4" alt="gamberi">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./media/dolci/dolce1.jpg" class=" d-block w-100 rounded-4" alt="gelato">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-11 col-md-3 text-end d-flex justify-content-end align-items-end my-2">
+              <div>
+                <p></p>
+                <button class="btn btn-outline-dark rounded-pill">Galleria</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section2 -->
+        <section class="container-fluid ">
+          <div class="row justify-content-center">
+            <!-- antipasti -->
+            <div class="col-11 col-md-10 my-1">
+              <div class="row text-light justify-content-center">
+                <div class="col-11 sec2-Antipasti d-flex justify-content-between align-items-center rounded-4 p-2">
+                  <img src="./media/antipasti/starter1.jpg" class="img-fluid img-sec2-a rounded-4" alt="">
+                  <p class="d-none d-md-block">Le nostre preparazioni</p>
+                  <p><i class="bi bi-people-fill"></i> 8.1K</p>
+                </div>
+              </div>
+            </div>
+            <!-- primi -->
+            <div class="col-11 col-md-10 my-1">
+              <div class="row text-light justify-content-center">
+                <div class="col-11 sec2-Primi d-flex justify-content-between align-items-center rounded-4 p-2">
+                  <img src="./media/primi piatti/primo1.avif" class="img-fluid img-sec2-a rounded-4" alt="">
+                  <p class="d-none d-md-block">Le nostre preparazioni</p>
+                  <p><i class="bi bi-people-fill"></i> 19.4K</p>
+                </div>
+              </div>
+            </div>
+            <!-- secondi -->
+            <div class="col-11 col-md-10 my-1">
+              <div class="row text-light justify-content-center">
+                <div class="col-11 sec2-Secondi d-flex justify-content-between align-items-center rounded-4 p-2">
+                  <img src="./media/secondi piatti/secondo3.jpg" class="img-fluid img-sec2-a rounded-4" alt="">
+                  <p class="d-none d-md-block">Le nostre preparazioni</p>
+                  <p><i class="bi bi-people-fill"></i> 12.4K</p>
+                </div>
+              </div>
+            </div>
+            <!-- dolci -->
+            <div class="col-11 col-md-10 my-1">
+              <div class="row text-light justify-content-center">
+                <div class="col-11 sec2-Dolci d-flex justify-content-between align-items-center rounded-4 p-2">
+                  <img src="./media/dolci/dolce1.jpg" class="img-fluid img-sec2-a rounded-4" alt="">
+                  <p class="d-none d-md-block">Le nostre preparazioni</p>
+                  <p><i class="bi bi-people-fill"></i> 20.4K</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="container my-5">
+          <div class="row justify-content-evenly align-items-center ">
+            <div class="col-11">
+              <p><ins datetime="2015-11-15T22:55:03Z">30/04/2024</ins></p>
+              <h3 class="fw-bold">I piatti del giorno</h3>
+            </div>
+            <div class="col-11 col-md-5 my-5">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Antipasti
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Primi piatti
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Secondi piatti
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just filling up the space to make it look, at
+                      least at first glance, a bit more representative of how this would look in a real-world
+                      application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Dolci
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just filling up the space to make it look, at
+                      least at first glance, a bit more representative of how this would look in a real-world
+                      application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-11 col-md-5 my-5">
+              <form class=" p-4 rounded-4 d-flex flex-column align-items-center justify-content-center">
+                <h6 class="sec-form ">Prenota qui il tuo tavolo, riceverai la conferma via email</h6>
+                <div class="my-2 w-100">
+                  <input type="text" placeholder="name*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="text" placeholder="surname*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="email" placeholder="email*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="text" placeholder="+39*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="date" placeholder="*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="datetime" placeholder="21:00*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <input type="number" name="num" min="1" max="20" placeholder="table for*" required class="rounded-4 w-100 px-2">
+                </div>
+                <div class="my-2 w-100">
+                  <button class="btn btn-outline-light rounded-pill">Invia</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+
+      <!-- footer -->
+      <footer class="container-fluid my-5 p-0 p-md-4 border-top border-dark">
+        <div class="row justify-content-around align-items-center footer">
+          <div class="col-11 col-md-3">
+            <ul>
+              <li>Facebook <i class="bi bi-facebook"></i></li>
+              <li>Instagram <i class="bi bi-instagram"></i></li>
+              <li>Twitter <i class="bi bi-twitter"></i></li>
+            </ul>
+          </div>
+          <div class="col-11 col-md-3">
+            <ul>
+              <li>+123456789</li>
+              <li>via delle bruschette, 1</li>
+              <li>myrest@aurant.com</li>
+            </ul>
+          </div>
+          <div class="col-11 col-md-3">
+            <ul>
+              <li>Whatsapp <i class="bi bi-whatsapp"></i></li>
+              <li>Messanger <i class="bi bi-messenger"></i></li>
+              <li>Google <i class="bi bi-google"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+      <!-- offcanvas navbar -->
+
+      <div class="offcanvas offcanvas-top p-3" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold" id="offcanvasTopLabel">I nostri piatti:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="container">
+            <div class="row justify-content-evenly ">
+              <!-- antipasti -->
+              <div class="col-12 col-md-3 my-2 d-flex justify-content-center ">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/antipasti/starter1.jpg" class="card-img-top" alt="antipasti">
+                  <div class="card-body">
+                    <h5 class="card-title">Antipasti</h5>
+                    <a href="./antipasti.html" class="btn btn-outline-dark rounded-pill">dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <!-- primi -->
+              <div class="col-12 col-md-3 my-2 d-flex justify-content-center ">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/primi piatti/primo1.avif" class="card-img-top" alt="primi">
+                  <div class="card-body">
+                    <h5 class="card-title">Primi piatti</h5>
+                    <a href="./primi.html" class="btn btn-outline-dark rounded-pill">dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <!-- secondi -->
+              <div class="col-12 col-md-3 my-2 d-flex justify-content-center ">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/secondi piatti/secondo3.jpg" class="card-img-top img-fluid" alt="secondi">
+                  <div class="card-body">
+                    <h5 class="card-title">Secondi piatti</h5>
+                    <a href="./secondi.html" class="btn btn-outline-dark rounded-pill">dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dolci -->
+              <div class="col-12 col-md-3 my-2 d-flex justify-content-center ">
+                <div class="card" style="width: 18rem;">
+                  <img src="./media/dolce1.jpg" class="card-img-top" alt="dolci">
+                  <div class="card-body">
+                    <h5 class="card-title">Dolci</h5>
+                    <a href="./dolci.html" class="btn btn-outline-dark rounded-pill">dettagli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- bs js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
